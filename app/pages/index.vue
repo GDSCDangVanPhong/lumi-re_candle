@@ -10,6 +10,8 @@
             <LandingBentoDisplay />
             <LandingFeaturesCards/>
             <LandingHotsProduct />
+            <LandingNewProducts class="mt-24"/>
+            <CommonsTestimonials class="mt-24"/>
         </UContainer>
         
     </div>

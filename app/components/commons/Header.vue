@@ -7,7 +7,7 @@
         <template #right>
             <CommonsColorMode/>
             <UButton icon="lets-icons:bag" variant="ghost" class="cursor-pointer"/>
-            <UButton icon="ion:search-sharp" variant="ghost" class="cursor-pointer"/>
+            <CommonsSearchModal/>
             <NuxtLink to='/login'>
                 <UButton label="Sign in" variant="outline" class="cursor-pointer"/>
             </NuxtLink>
