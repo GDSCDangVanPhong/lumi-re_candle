@@ -8,11 +8,11 @@
     </div>
     <div class="relative flex w-full flex-col items-center justify-center overflow-hidden">
       <!-- First Marquee -->
-      <Marquee
+      <CommonsMarquee
         pause-on-hover
         class="[--duration:20s]"
       >
-        <ReviewCard
+        <CommonsReviewCard
           v-for="review in firstRow"
           :key="review.username"
           :img="review.img"
@@ -20,7 +20,7 @@
           :username="review.username"
           :body="review.body"
         />
-      </Marquee>
+      </CommonsMarquee>
 
       <!-- Second Marquee (reverse) -->
       <CommonsMarquee
