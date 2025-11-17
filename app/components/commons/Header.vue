@@ -1,7 +1,7 @@
 <template>
-    <UHeader>
+    <UHeader class='h-32'>
         <template #title>
-            <NuxtImg src="/logo.svg" alt="Logo" format="webp" width='120' />
+            <NuxtImg src="/logo.svg" alt="Logo" format="webp" width='200' />
         </template>
         <UInput class='w-[550px]' type="search" placeholder="Search an item" variant="subtle"  size="lg" icon='ion:search-sharp'/>
         <template #right>
