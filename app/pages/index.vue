@@ -1,6 +1,12 @@
 <template>
     <div>
-        <LandingDiscountCTA/>
+        <LandingDiscountCTA
+          image="/image 2.png"
+          title="Happy Vietnamese Women's Day 20.10"
+          subtitle="A thoughtfully designed gift set — perfect for mom, wife, loved one, or female colleague."
+          buttonText="Learn more"
+          
+        />
         <UPageHero
             title="Lumière Candle"
             description="A premium handcrafted candle brand offering beautifully designed, soothingly aromatic, and thoughtfully curated scents to elevate your everyday living."
@@ -29,7 +35,7 @@ const links = ref<ButtonProps[]>([
         icon: "i-lucide-square-play",
     },
     {
-        label: "Learn more",
+        label: "Discover",
         to: "/docs/getting-started/theme/design-system",
         color: "neutral",
         variant: "subtle",

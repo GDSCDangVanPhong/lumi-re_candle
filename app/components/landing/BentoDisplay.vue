@@ -1,67 +1,65 @@
 <template>
-  <CommonsBentoGrid class="grid w-full auto-rows-[22rem] grid-cols-3 gap-4 lg:grid-rows-3">
-    <CommonsBentoGridCard
-      v-for="(feature, index) in features"
+  <CommonsBentoGrid class="mx-auto max-w-4xl">
+    <CommonsBentoGridItem
+      v-for="(item, index) in items"
       :key="index"
-      v-bind="feature"
-      :class="feature.class"
+      :class="index === 3 || index === 6 ? 'md:col-span-2' : ''"
     >
-      <template
-        v-if="feature.image"
-        #background
-      >
-        <div
-          class="absolute right-0 top-0 size-full bg-center opacity-80 transition duration-150 ease-in-out group-hover:opacity-20"
-          :style="`background-image: url('${feature.image}')`"
-        ></div>
+      <template #header>
+        <div class="flex size-full  space-x-4">
+            <div class="w-full h-44 rounded-md overflow-hidden bg-zinc-800">
+              <NuxtImg :src="item.image" alt="Item Image" class="w-full h-full object-cover" />
+            </div>
+        </div>
       </template>
-    </CommonsBentoGridCard>
+
+      <template #title>
+        <strong>{{ item.title }}</strong>
+      </template>
+
+      <template #description>
+        <p>{{ item.description }}</p>
+      </template>
+    </CommonsBentoGridItem>
   </CommonsBentoGrid>
 </template>
 
 <script lang="ts" setup>
-
-const features = [
+const items = [
   {
-    name: "Save your files",
-    description: "We automatically save your files as you type.",
-    href: "/",
-    image:
-      "/hero.png",
-    cta: "Learn more",
-    class: "lg:row-start-1 lg:row-end-4 lg:col-start-2 lg:col-end-3",
+    title: "The Dawn of Innovation",
+    description: "Explore the birth of groundbreaking ideas and inventions.",
+    image: "/LILLY.webp",
   },
   {
-    name: "Full text search",
-    description: "Search through all your files in one place.",
-    href: "/",
-    image:
-      "lumiere-the-mini-candle-of-light-897879 1.png",
-    cta: "Learn more",
-    class: "lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-3",
+    title: "The Digital Revolution",
+    description: "Dive into the transformative power of technology.",
+    image: "/Frame 21.png",
   },
   {
-    name: "Multilingual",
-    description: "Supports 100+ languages and counting.",
-    href: "/",
-    cta: "Learn more",
-    class: "lg:col-start-1 lg:col-end-2 lg:row-start-3 lg:row-end-4",
+    title: "The Art of Design",
+    description: "Discover the beauty of thoughtful and experience design.",
+    image: "/eug8z6fut1u.png",
   },
   {
-    name: "Calendar",
-    description: "Use the calendar to filter your files by date.",
-    href: "/",
-    cta: "Learn more",
-    class: "lg:col-start-3 lg:col-end-3 lg:row-start-1 lg:row-end-2",
+    title: "The Power of Communication",
+    description: "Understand the impact of effective communication in our lives.",
+    image: "/hero.png",
   },
   {
-    name: "Notifications",
-    description: "Get notified when someone shares a file or mentions you in a comment.",
-    href: "/",
-    image:
-      "image 3.png",
-    cta: "Learn more",
-    class: "lg:col-start-3 lg:col-end-3 lg:row-start-2 lg:row-end-4",
+    title: "The Pursuit of Knowledge",
+    description: "Join the quest for understanding and enlightenment.",
+    image: "/lumiere-the-mini-candle-of-light-897879 1.png",
+  },
+  {
+    title: "The Joy of Creation",
+    description: "Experience the thrill of bringing ideas to life.",
+    image: "/image 3.png",
+  },
+  {
+    title: "The Spirit of Adventure",
+    description: "Embark on exciting journeys and thrilling discoveries.",
+    image: "/Frame 15.png",
   },
 ];
 </script>

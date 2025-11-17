@@ -1,10 +1,9 @@
 <template>
     <div>
-        <div class="flex justify-end">
+        <USeparator label="New Arrivals" class="mt-5"/>
+        <div class="flex justify-end mt-5">
             <UButton label="See more!" variant="subtle" class=" cursor-pointer" size="lg" />
         </div>
-        
-        <USeparator label="New Arrivals" class="mt-5"/>
         <UCarousel
             v-slot="{ item }"
             dots
