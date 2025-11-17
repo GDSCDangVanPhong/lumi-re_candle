@@ -1,7 +1,7 @@
 <template>
     <UHeader>
         <template #title>
-            <NuxtImg src="/logo.svg" alt="Logo" format="webp" />
+            <NuxtImg src="/logo.svg" alt="Logo" format="webp" width='120' />
         </template>
         <UNavigationMenu :items='item' />
         <template #right>
