@@ -21,7 +21,6 @@ const slides = [
       <UCarousel
         :items="slides"
         :autoplay="{ delay: 4500 }"
-        :ui="{ indicators: { active: 'bg-rose-600', inactive: 'bg-gray-300' } }"
         indicators
         class="w-full"
       >
@@ -58,7 +57,6 @@ const slides = [
                   <UButton
                     :label="item.buttonText"
                     size="xl"
-                    color="white"
                     variant="solid"
                     class="mt-8 shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300
                            bg-white text-black hover:bg-gray-100 font-semibold px-10"

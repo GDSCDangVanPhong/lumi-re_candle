@@ -2,7 +2,7 @@
     <div>
         <CommonsHeader />
         <div
-             class="backdrop-blur border-b sticky top-16 z-40 bg-default/75 border-default"
+             class="backdrop-blur border-b sticky top-32 z-40 bg-default/75 border-default"
            >
              <div class="max-w-7xl mx-auto px-4 flex justify-center">
                <UNavigationMenu :items="items" :highlight="true" />
