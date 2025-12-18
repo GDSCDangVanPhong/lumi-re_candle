@@ -13,11 +13,11 @@
             :ui="{ item: 'basis-1/3' }"
             class="mt-10"
         >
-            <div class="flex flex-col justify-center">
+            <NuxtLink :to="item.to" class="flex flex-col justify-center">
                 <NuxtImg :src="item.img" class='rounded-md' />
                 <p class="text-center text-sm mt-5 font-bold">{{ item.title }}</p>
                 <p class="text-center text-sm mt-2 text-red-500">{{ item.price }}</p>
-            </div>
+            </NuxtLink>
         </UCarousel>
     </div>
 </template>
@@ -26,31 +26,38 @@ const items = [
     {
         title: "Premium Essential Oil Scented Candle – Amethyst Crystal Hotel Fragrance",
         price: "$19.99",
-        img: '/Frame 21.png'
+        img: '/Frame 21.png',
+        to: '/products'
     },
     {
         title: "Premium Essential Oil Scented Candle – Amethyst Crystal Hotel Fragrance",
         price: "$19.99",
-        img: '/Frame 21.png'
-
+        img: '/Frame 21.png',
+        to: '/products'
     },
     {
         title: "Premium Essential Oil Scented Candle – Amethyst Crystal Hotel Fragrance",
         price: "$19.99",
-        img: '/Frame 21.png'
-
+        img: '/Frame 21.png',
+        to: '/products'
     },
     {
         title: "Premium Essential Oil Scented Candle – Amethyst Crystal Hotel Fragrance",
         price: "$19.99",
-        img: '/Frame 21.png'
-
+        img: '/Frame 21.png',
+        to: '/products'
     },
     {
         title: "Premium Essential Oil Scented Candle – Amethyst Crystal Hotel Fragrance",
         price: "$19.99",
-        img: '/Frame 21.png'
-
+        img: '/Frame 21.png',
+        to: '/products'
+    },
+    {
+        title: "Premium Essential Oil Scented Candle – Amethyst Crystal Hotel Fragrance",
+        price: "$19.99",
+        img: '/Frame 21.png',
+        to: '/products'
     },
 ];
 </script>

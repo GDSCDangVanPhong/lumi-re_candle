@@ -7,7 +7,7 @@
         <template #right>
             <CommonsColorMode/>
             <UChip :text="cart.count" size="3xl">
-                <UButton icon="lets-icons:bag" variant="ghost" class="cursor-pointer" />
+                <UButton icon="lets-icons:bag" variant="ghost" class="cursor-pointer" to="/BeforeCart"/>
             </UChip>
             <NuxtLink to='/login'>
                 <UButton label="Sign in" variant="outline" class="cursor-pointer"/>
