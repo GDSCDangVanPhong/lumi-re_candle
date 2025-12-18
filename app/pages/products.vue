@@ -206,40 +206,35 @@ const navigationItems = ref<NavigationMenuItem[][]>([
 ])
 const cards = ref([
   {
-    to: '/docs/getting-started/integrations/icons'
+    to: '/productDetail'
   },
   {
-    
-    to: '/docs/getting-started/integrations/fonts'
+    to: '/productDetail'
   },
   {
-    
-    to: '/docs/getting-started/integrations/color-mode'
+    to: '/productDetail'
   },
   {
-   
-    to: '/docs/getting-started/integrations/icons'
+    to: '/productDetail'
   },
   {
-    
-    to: '/docs/getting-started/integrations/fonts'
+    to: '/productDetail'
   },
   {
-    
-    to: '/docs/getting-started/integrations/color-mode'
+    to: '/productDetail'
   },
   {
-    
-    to: '/docs/getting-started/integrations/icons'
+    to: '/productDetail'
   },
   {
-    
-    to: '/docs/getting-started/integrations/fonts'
+    to: '/productDetail'
   },
   {
-    
-    to: '/docs/getting-started/integrations/color-mode'
+    to: '/productDetail'
   },
+  {
+    to: '/productDetail'
+  }
 ])
 
 </script>

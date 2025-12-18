@@ -23,28 +23,17 @@ const items = computed<NavigationMenuItem[]>(() => [
     to: '/'
   },
   {
-    label: 'Scented candle',
-    to: '/a'
+    label: 'Products',
+    to: '/products'
   },
   {
-    label: 'Cup',
-    to: '/b'
+    label: 'News',
+    to: '/news'
   },
+
   {
-    label: 'Gift boxes',
-    to: '/c'
-  },
-  {
-    label: 'Sales off',
-    to: '/d'
-  },
-  {
-    label: 'Tips',
-    to: '/e'
-  },
-  {
-    label: 'About',
-    to: '/f'
+    label: 'Customize Candle',
+    to: '/Customize'
   }
   
   

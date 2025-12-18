@@ -16,7 +16,7 @@
           <tr v-for="(item, index) in cartItems" :key="index">
             <td class="product-cell">
               <button class="remove-btn" @click="removeItem(index)">×</button>
-              <img :src="item.image" alt="Product Image" class="product-image">
+              <img :src="item.image" alt="Product Image" class="product-image ">
               <span class="product-name">{{ item.name }}</span>
             </td>
             <td>{{ item.price }}</td>
@@ -48,9 +48,8 @@
           </tr>
         </table>
         
-        <button class="continue-shopping">&lt; Continue Shopping</button>
-        <button class="proceed-checkout">Proceed to checkout</button>
-        <button class="apply-voucher">Apply voucher</button>
+        <button class="continue-shopping" @click="navigateTo('/products')">&lt; Continue Shopping</button>
+        <button class="proceed-checkout" @click="navigateTo('/CompleteCart')">Proceed to checkout</button>
       </div>
     </div>
   </div>
@@ -149,7 +148,7 @@ const updateTotal = (index) => {
 
 .product-image {
   width: 50px;
-  height: 50px;
+  height: 500px;
   margin-right: 10px;
 }
 
